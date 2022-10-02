@@ -7,8 +7,8 @@
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: url("/images/header/headerprod.jpg") no-repeat center fixed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    background: black url("/ecommerce-store/images/header/headerprod.jpg") no-repeat center fixed;
 }
 
 a {
@@ -120,16 +120,6 @@ nav ul li {
     background-color: antiquewhite;
 }
 
-.col-3 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-
-.col-3 img {
-    width: 100%;
-}
-
 .small-container {
     max-width: 1380px;
     margin: auto;
@@ -197,35 +187,40 @@ nav ul li {
     margin-top: 100px;
 }
 
-.testimonial .col-3 {
+.testimonial .testchild {
     text-align: center;
     padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-.testimonial .col-3 img {
+.testchild {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.testimonial .testchild img {
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
 }
 
-.testimonial .col-3:hover {
+.testimonial .testchild:hover {
     transform: translateY(-10px);
 }
 
 .fa.fa-quote-left {
-    font-size: 34px;
-    color: #000000;
+    font-size: 40px;    
 }
 
-.col-3 p {
-    font-size: 12px;
+.testchild p {
+    font-size: 14px;
     margin: 12px 0;
 }
 
-.testimonial .col-3 h3 {
+.testimonial .testchild h3 {
     font-weight: 600;
     font-size: 16px;
 }
@@ -447,6 +442,9 @@ select, input {
         font-weight: 700;
         color: #1D263B;
     }
+    .headerimg h1 {
+        font-size: 32px;
+    }
     .child .logo img {
         margin: 20px 20px;
     }
@@ -456,7 +454,7 @@ select, input {
     .child {
         text-align: center;
     }
-    .halfchild, .col-3, .childprods {
+    .halfchild, .testchild, .childprods {
         flex-basis: 100%;
     }
     .single-product .child {
