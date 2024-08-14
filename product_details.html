@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -171,4 +171,368 @@
         </div>
         <script src="./src/js/script.js"></script>
     </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product detail page for Jackets for Women at Hannes & Co. Find high-quality fashion items and more.">
+    <meta name="keywords" content="Jackets, Women, Fashion, Hannes & Co., Product Details">
+    <title>Product-109B | Hannes & Co.</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/svg+xml" href="./images/header/favicon.svg">
+    <style>
+        /* Add additional styling for better UI */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        nav ul.nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul.nav-menu li {
+            margin: 0 15px;
+        }
+
+        nav ul.nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .small-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .single-product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .halfchild {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .halfchild img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .small-img-child {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .small-img-col img {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .small-img-col img:hover {
+            border-color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .rating i {
+            color: #f39c12;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .footerChild2 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footerChild2 ul li {
+            margin-bottom: 10px;
+        }
+
+        .footerChild2 ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .footerChild2 ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .belowfooter {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .related-products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .related-products .product-item {
+            flex: 1 1 calc(25% - 20px);
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .related-products .product-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .related-products .product-item h4 {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .related-products .product-item p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .related-products .product-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .related-products .product-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/header/complogo.png" alt="Hannes & Co. Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="products.html">Products</a></li>
+                        <li class="nav-item"><a href="#footer">Contact Us</a></li>
+                        <li class="nav-item"><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="./cart.html">
+                    <img class="cart" src="./images/header/cart.svg" alt="Shopping Cart">
+                </a>
+                <div class="toggle"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="small-container single-product">
+        <div class="child">
+            <div class="halfchild">
+                <img src="./images/products/product-5.webp" id="prodImg" alt="Jacket for Women">
+                <div class="small-img-child">
+                    <div class="small-img-col">
+                        <img src="./images/products/product-13.webp" alt="Alternate view 1">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/products/product-12.webp" alt="Alternate view 2">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/products/product-6.webp" alt="Alternate view 3">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/products/product-15.webp" alt="Alternate view 4">
+                    </div>
+                </div>
+            </div>
+            <div class="halfchild">
+                <p>Home / Products</p>
+                <h1>Jackets for Women</h1>
+                <h4>$109.00</h4>
+                <form>
+                    <label for="size-select">Size:</label>
+                    <select id="size-select" aria-label="Select Size">
+                        <option disabled selected>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>L</option>
+                        <option>M</option>
+                        <option>S</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1" aria-label="Quantity">
+                    <a href="./cart.html" class="btn">Add To Cart</a>
+                </form>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <p>
+                    Unleash your inner demons and go beyond what you can achieve. Try our slim fit wear
+                    starting at only $109.99*
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="small-container">
+        <div class="child child-2">
+            <h2>Related Products</h2>
+            <p><a href="./products.html">View More</a></p>
+        </div>
+        <div class="related-products">
+            <!-- Example of related products -->
+            <div class="product-item">
+                <img src="./images/products/product-3.webp" alt="Casual Hoodies">
+                <h4>Casual Hoodies</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$89.99</p>
+            </div>
+            <div class="product-item">
+                <img src="./images/products/product-1.webp" alt="Sports Wear">
+                <h4>Sports Wear</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$109.99</p>
+            </div>
+            <div class="product-item">
+                <img src="./images/products/product-11.webp" alt="Black T-Shirt for Women">
+                <h4>Black T-Shirt for Women</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$79.99</p>
+            </div>
+            <div class="product-item">
+                <img src="./images/products/product-12.webp" alt="Gym Wear">
+                <h4>Gym Wear</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$59.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="child">
+                <div class="footerChild1">
+                    <img src="./images/header/complogo.png" alt="Hannes & Co. Logo">
+                    <h4>Mail us at: <a href="mailto:hannes@hannesdev.xyz">hannes@hannesdev.xyz</a></h4>
+                </div>
+                <div class="footerChild2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="linkgoeshere">Payments</a></li>
+                        <li><a href="linkgoeshere">Shipping</a></li>
+                        <li><a href="linkgoeshere">Return Policy</a></li>
+                        <li><a href="linkgoeshere">FAQ Topics</a></li>
+                    </ul>
+                </div>
+                <div class="footerChild2">
+                    <h3>Our Socials</h3>
+                    <ul>
+                        <li><a href="linkgoeshere">Instagram</a></li>
+                        <li><a href="linkgoeshere">Facebook</a></li>
+                        <li><a href="linkgoeshere">Twitter</a></li>
+                        <li><a href="linkgoeshere">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footerChild2">
+                    <h3>Registered Office</h3>
+                    <ul>
+                        <li>Apartment A13, Floor 15,</li>
+                        <li>Sunnyvale Park,</li>
+                        <li>Illinois, CA.</li>
+                        <li>-</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="belowfooter">
+                &copy; Hannes & Co. Associates, 2023 <br>
+                Aditya Chakravorty, All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/script.js" defer></script>
+</body>
 </html>
